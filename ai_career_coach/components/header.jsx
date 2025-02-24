@@ -28,9 +28,9 @@ export default async function Header() {
         <Link href="/">
           <Image
             src={"/logo.png"}
-            alt="Sensai Logo"
-            width={1200}
-            height={500}
+            alt="CareerCraft AI Logo"
+            width={2200}
+            height={800}
             className="h-12 py-1 w-auto object-contain"
           />
         </Link>
