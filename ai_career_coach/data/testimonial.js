@@ -1,26 +1,26 @@
 export const testimonial = [
   {
     quote:
-      "The AI-powered interview prep was a game-changer. Landed my dream job at a top tech company!",
+      "The AI-powered interview prep gave me a competitive advantage, paving the way for me to land my dream job at a leading tech company!",
     author: "Sarah Chen",
     image: "https://randomuser.me/api/portraits/women/75.jpg",
-    role: "Software Engineer",
-    company: "Tech Giant Co.",
+    role: "DevOps Engineer",
+    company: "Innovatech",
   },
   {
     quote:
-      "The industry insights helped me pivot my career successfully. The salary data was spot-on!",
+      "The market intelligence provided a strategic edge in my career shift, with precise salary benchmarks that proved invaluable!",
     author: "Michael Rodriguez",
     image: "https://randomuser.me/api/portraits/men/75.jpg",
-    role: "Product Manager",
-    company: "StartUp Inc.",
+    role: "Team Manager",
+    company: "Wipro",
   },
   {
     quote:
-      "My resume's ATS score improved significantly. Got more interviews in two weeks than in six months!",
+      "Enhancing my resume’s ATS compatibility led to a surge in interview opportunities—more in two weeks than the past six months combined!",
     author: "Priya Patel",
     image: "https://randomuser.me/api/portraits/women/74.jpg",
-    role: "Marketing Director",
-    company: "Global Corp",
+    role: "Data Analyst",
+    company: "Microsoft",
   },
 ];

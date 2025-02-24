@@ -1,32 +1,32 @@
 export const faqs = [
   {
-    question: "What makes Sensai unique as a career development tool?",
+    question: "How does CareerCraft AI enhance my job search?",
     answer:
-      "Sensai combines AI-powered career tools with industry-specific insights to help you advance your career. Our platform offers three main features: an intelligent resume builder, a cover letter generator, and an adaptive interview preparation system. Each tool is tailored to your industry and skills, providing personalized guidance for your professional journey.",
+      "CareerCraft AI leverages advanced AI tools to refine your resume, craft tailored cover letters, and prepare you for interviews with role-specific questions. Our platform ensures your applications align with industry standards, increasing your chances of success.",
   },
   {
-    question: "How does Sensai create tailored content?",
+    question: "What makes CareerCraft AI different from other career platforms?",
     answer:
-      "Sensai learns about your industry, experience, and skills during onboarding. It then uses this information to generate customized resumes, cover letters, and interview questions. The content is specifically aligned with your professional background and industry standards, making it highly relevant and effective.",
+      "Unlike traditional job search tools, CareerCraft AI personalizes your job search by analyzing your expertise, industry trends, and ideal roles. Our AI adapts in real time to position you as the best candidate for your desired job.",
   },
   {
-    question: "How accurate and up-to-date are Sensai's industry insights?",
+    question: "Can CareerCraft AI assist with a career switch?",
     answer:
-      "We update our industry insights weekly using advanced AI analysis of current market trends. This includes salary data, in-demand skills, and industry growth patterns. Our system constantly evolves to ensure you have the most relevant information for your career decisions.",
+      "Yes! CareerCraft AI helps professionals transition into new industries by identifying transferable skills and reframing resumes and cover letters accordingly. It also provides AI-driven recommendations on skills and certifications to boost your career shift.",
   },
   {
-    question: "Is my data secure with Sensai?",
+    question: "How does CareerCraft AI improve interview readiness?",
     answer:
-      "Absolutely. We prioritize the security of your professional information. All data is encrypted and securely stored using industry-standard practices. We use Clerk for authentication and never share your personal information with third parties.",
+      "CareerCraft AI offers AI-powered mock interview sessions with real-time feedback. It evaluates your responses, highlights areas for improvement, and provides expert tips to enhance your confidence and performance in interviews.",
   },
   {
-    question: "How can I track my interview preparation progress?",
+    question: "Does CareerCraft AI help with job recommendations?",
     answer:
-      "Sensai tracks your performance across multiple practice interviews, providing detailed analytics and improvement suggestions. You can view your progress over time, identify areas for improvement, and receive AI-generated tips to enhance your interview skills based on your responses.",
+      "While CareerCraft AI is not a job board, it optimizes your resume to match job descriptions. Our AI analyzes postings and suggests enhancements to improve your chances of passing applicant tracking systems (ATS) and getting noticed by recruiters.",
   },
   {
-    question: "Can I edit the AI-generated content?",
+    question: "Is CareerCraft AI suitable for students and fresh graduates?",
     answer:
-      "Yes! While Sensai generates high-quality initial content, you have full control to edit and customize all generated resumes, cover letters, and other content. Our markdown editor makes it easy to refine the content to perfectly match your needs.",
+      "Absolutely! CareerCraft AI caters to professionals at all levels, including students and recent graduates. We offer tailored guidance on building a compelling resume, writing persuasive cover letters, and preparing for interviews with limited experience.",
   },
 ];
