@@ -80,7 +80,7 @@ export default function ResourcesPage() {
   );
 
   return (
-    <div className="min-h-screen bg-black text-white p-6">
+    <div className="min-h-screen text-white p-6" style={{ backgroundColor: "#0a0a0a" }}>
       <div className="max-w-7xl mx-auto">
         <h1 className="text-5xl font-bold mb-4">Explore Resources</h1>
         <p className="text-gray-400 text-xl">Discover resources to advance your career</p>

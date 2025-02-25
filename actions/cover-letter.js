@@ -17,31 +17,35 @@ export async function generateCoverLetter(data) {
 
   if (!user) throw new Error("User not found");
 
-  const prompt = `
-    Write a professional cover letter for a ${data.jobTitle} position at ${
+  const prompt = `  
+  You are a professional career coach and expert cover letter writer.  
+  Write a **compelling, ATS-optimized cover letter** for a **${
+    data.jobTitle
+  }** position at **${
     data.companyName
-  }.
-    
-    About the candidate:
-    - Industry: ${user.industry}
-    - Years of Experience: ${user.experience}
-    - Skills: ${user.skills?.join(", ")}
-    - Professional Background: ${user.bio}
-    
-    Job Description:
-    ${data.jobDescription}
-    
-    Requirements:
-    1. Use a professional, enthusiastic tone
-    2. Highlight relevant skills and experience
-    3. Show understanding of the company's needs
-    4. Keep it concise (max 400 words)
-    5. Use proper business letter formatting in markdown
-    6. Include specific examples of achievements
-    7. Relate candidate's background to job requirements
-    
-    Format the letter in markdown.
-  `;
+  }** that effectively showcases the candidate's strengths.  
+
+  ### About the Candidate  
+  - **Industry:** ${user.industry}  
+  - **Years of Experience:** ${user.experience}  
+  - **Key Skills:** ${user.skills?.join(", ")}  
+  - **Professional Background:** ${user.bio}  
+
+  ### Job Description  
+  ${data.jobDescription}  
+
+  ### Cover Letter Requirements  
+  - Use a **confident, engaging, and professional** tone.  
+  - Start with a **strong opening** that grabs attention.  
+  - Clearly articulate **why the candidate is a great fit** for the role.  
+  - Showcase **specific achievements** with quantifiable results where possible.  
+  - Demonstrate **knowledge of the company’s values, goals, and challenges**.  
+  - Keep it **concise (under 400 words)** while making a strong impact.  
+  - Use **proper business letter formatting** in Markdown.  
+  - Close with a **call to action**, expressing enthusiasm for the opportunity.  
+
+  **Format the response as a well-structured markdown cover letter without any additional explanations.**  
+`;
 
   try {
     const result = await model.generateContent(prompt);

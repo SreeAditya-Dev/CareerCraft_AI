@@ -71,17 +71,26 @@ export async function improveWithAI({ current, type }) {
   if (!user) throw new Error("User not found");
 
   const prompt = `
-    As an expert resume writer, improve the following ${type} description for a ${user.industry} professional.
-    Make it more impactful, quantifiable, and aligned with industry standards.
-    Current content: "${current}"
+    As an elite resume writer, refine the following ${type} description for a ${user.industry} professional with ${user.experience} years of experience.  
+  Optimize it for maximum impact, ATS compatibility, and alignment with industry standards.  
+  Transform it into a compelling, results-driven statement that highlights achievements, technical expertise, and quantifiable success.  
 
-    Requirements:
-    1. Use action verbs
-    2. Include metrics and results where possible
-    3. Highlight relevant technical skills
-    4. Keep it concise but detailed
-    5. Focus on achievements over responsibilities
-    6. Use industry-specific keywords
+  **Current content:** "${current}"
+
+  **Requirements for a 100% ATS-Optimized Resume:**  
+  1. Start with **powerful action verbs**  
+  2. Incorporate **measurable outcomes** (%, $, efficiency gains, cost savings, etc.)  
+  3. **Showcase technical skills** and **industry-relevant tools**  
+  4. Keep it **concise, dynamic, and engaging**  
+  5. Prioritize **achievements over responsibilities**  
+  6. Use **industry-specific keywords** to enhance ATS ranking  
+  7. Maintain a **formal, professional tone** (no generic phrases or fluff)  
+  8. Structure sentences in an **ATS-friendly manner** (no special characters or excessive formatting)  
+  9. Use **bullet points or short impactful sentences** (if necessary for ATS readability)  
+  10. Avoid pronouns like "I" or "my" for a **professional and ATS-compatible** tone  
+  11. Align wording with **job descriptions of top industry roles** for relevance  
+  12. Integrate **leadership, problem-solving, and innovation-related keywords** (if applicable)  
+  13. Ensure **SEO-friendly phrasing** to match recruiter searches
     
     Format the response as a single paragraph without any additional text or explanations.
   `;

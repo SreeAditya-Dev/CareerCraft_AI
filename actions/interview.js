@@ -22,13 +22,76 @@ export async function generateQuiz() {
   if (!user) throw new Error("User not found");
 
   const prompt = `
-    Generate 10 technical interview questions for a ${
-      user.industry
-    } professional${
-    user.skills?.length ? ` with expertise in ${user.skills.join(", ")}` : ""
-  }.
+    Generate **10 real-world interview questions** for a ${user.industry
+    } professional${user.skills?.length ? ` with expertise in ${user.skills.join(", ")}` : ""
+    }.
     
-    Each question should be multiple choice with 4 options.
+     **Requirements:**  
+        1. Identify the user’s industry from the following:  
+          - **Software & IT** (Software Engineering, Data Science, Cybersecurity, DevOps, Cloud, AI)  
+          - **Business & Management** (Product Management, Project Management, Business Analysis)  
+          - **Marketing & Sales** (Digital Marketing, SEO, Sales Funnels, Customer Retention)  
+          - **Finance & Accounting** (Financial Analysis, Investment, Risk Management, Accounting)  
+          - **Healthcare & Medicine** (Doctors, Nurses, Pharmacists, Medical Research)  
+          - **Law & Legal** (Corporate Law, Criminal Law, Intellectual Property)  
+          - **Engineering (Mechanical, Electrical, Civil, Aerospace)** (Core Engineering Topics)  
+          - **Education & Research** (Teaching, Academic Research, Pedagogy)  
+          - **Creative & Design** (Graphic Design, UI/UX, Game Design, Video Editing)  
+          - **Media & Entertainment** (Journalism, Content Writing, Video Production)  
+          - **Government & Public Sector** (Civil Services, Military, Governance)  
+          - **Human Resources (HR)** (Recruitment, Employee Engagement, Labor Laws)  
+          - **Logistics & Supply Chain** (Procurement, Inventory, Demand Forecasting)  
+
+        2. Consider the candidate’s **years of experience** using the parameter ${ user.experience }:  
+          - **0-2 years (Entry-Level)** → Focus on **fundamentals**, tools, and **basic problem-solving**.  
+          - **3-5 years (Mid-Level)** → Emphasize **practical experience**, common **industry challenges**, and best practices.  
+          - **6+ years (Senior-Level)** → Cover **strategic decision-making, optimization, and leadership** within the field.  
+
+        3. Generate **role-specific questions** that match the **user’s field and experience level**.  
+        4. Each question should be **multiple choice (MCQ)** with exactly **4 answer options**.  
+        5. Ensure **only one correct answer** per question.  
+        6. Provide a **detailed explanation** for the correct answer.  
+        7. Questions should focus on **real-world job scenarios** and **industry best practices**.  
+        8. Maintain **a mix of fundamental and advanced questions** for a well-rounded experience.  
+
+        **Industry-Specific Topics to Cover:**  
+        ✅ **Software & IT:**  
+          - **0-2 yrs:** Data Structures, Basic Algorithms, SQL Queries, REST APIs  
+          - **3-5 yrs:** System Design, Scalability, CI/CD, Security Best Practices  
+          - **6+ yrs:** Architectural Decisions, Performance Optimization, Cloud Cost Efficiency,Data Structures  
+
+        ✅ **Marketing & Sales:**  
+          - **0-2 yrs:** SEO, Google Ads, Social Media Analytics  
+          - **3-5 yrs:** Marketing Automation, CRM, Conversion Funnels  
+          - **6+ yrs:** Growth Hacking, Brand Strategy, Competitive Positioning  
+
+        ✅ **Finance & Accounting:**  
+          - **0-2 yrs:** Balance Sheets, Tax Basics, Cost Accounting  
+          - **3-5 yrs:** Portfolio Management, Budget Forecasting, Financial Risk Analysis  
+          - **6+ yrs:** Mergers & Acquisitions, Corporate Finance, Global Markets  
+
+        ✅ **Engineering (Mechanical, Electrical, Civil, Aerospace):**  
+          - **0-2 yrs:** Basic Material Properties, Circuit Design, CAD Software  
+          - **3-5 yrs:** Failure Analysis, Design Optimization, Quality Control  
+          - **6+ yrs:** Industry 4.0, Advanced Manufacturing, Large-Scale Infrastructure  
+
+        ✅ **HR & Talent Management:**  
+          - **0-2 yrs:** Hiring Process, Resume Screening, Interview Techniques  
+          - **3-5 yrs:** Employee Engagement, Performance Reviews, HR Analytics  
+          - **6+ yrs:** Organizational Development, Labor Law Strategy, HR Policy-Making  
+
+        ✅ **Healthcare & Medicine:**  
+          - **0-2 yrs:** Medical Terminology, Patient Care Basics, Pharmacology  
+          - **3-5 yrs:** Disease Diagnosis, Treatment Planning, Hospital Management  
+          - **6+ yrs:** Healthcare Policy, Advanced Research, Medical Ethics  
+
+        ✅ **Education & Research:**  
+          - **0-2 yrs:** Teaching Techniques, Learning Theories, Student Engagement  
+          - **3-5 yrs:** Academic Research, Paper Publishing, Grant Writing  
+          - **6+ yrs:** Education Policy, University Administration, Curriculum Development  
+
+
+
     
     Return the response in this JSON format only, no additional text:
     {
