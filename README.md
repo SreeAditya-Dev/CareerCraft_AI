@@ -93,7 +93,7 @@ CareerCraft AI follows a **modular & scalable architecture**:
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/SreeAditya-Dev/SNU_hackthon.git
 cd careercraft-ai
 ```
 
