@@ -4,6 +4,12 @@
 
 CareerCraft AI is a **smart career assistant** that helps job seekers create **professional resumes**, generate **custom cover letters**, and gain **AI-powered career insights**. It analyzes **job market trends**, **tracks career growth**, and offers **personalized recommendations** to enhance your career journey.
 
+---
+## **🌐 Live Demo**
+
+Try out CareerCraft AI here: https://careercraftai-sage.vercel.app
+
+
 ## **🛠️ Features & Functionality**
 
 ### ✅ **Resume & Cover Letter Generator**
@@ -37,7 +43,7 @@ CareerCraft AI is a **smart career assistant** that helps job seekers create **p
 | ------------------------ | ------------------------------------------- |
 | **Frontend**             | Next.js (React Framework)                   |
 | **Backend**              | Node.js (API & Business Logic)              |
-| **Database**             | PostgreSQL (Supabase Cloud Storage)         |
+| **Database**             | PostgreSQL (Prisma Cloud Storage)         |
 | **AI Processing**        | Google Gemini AI (Resume & Career Analysis) |
 | **Authentication**       | Clerk (Secure Login System)                 |
 | **Hosting & Deployment** | Vercel (For Frontend & Backend)             |
