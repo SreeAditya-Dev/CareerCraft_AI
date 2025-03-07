@@ -72,7 +72,7 @@ CareerCraft AI follows a **modular & scalable architecture**:
                Backend (Node.js - API)
                    🔽  - Connects AI, Database, and Frontend
 
-  Database (PostgreSQL - Supabase) & AI (Google Gemini)
+  Database (PostgreSQL - Prisma) & AI (Google Gemini)
                    🔽  - Stores resumes & enhances content
 
                Hosting (Vercel - Deployment)
